@@ -1,0 +1,672 @@
+html
+{
+	scroll-behavior: smooth;
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+
+#first_page
+{
+	background-image: url("skyzodiac.jpg");
+	background-size: cover;
+}
+
+#second_page
+{
+	background: darkviolet;
+	height: 100vh;
+	width: 100%;
+}
+
+#third_page
+{
+	background-image: url("page4.jpg");
+	background-size: cover;
+}
+
+#fourth_page
+{
+	background-image: url("page4.jpg");
+	background-size: cover;
+}
+
+#fifth_page
+{
+	background: darkviolet;
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	font-size: 15px;
+}
+
+#sixth_page
+{
+	background: black;
+	height: 60vh;
+	width: 100%;
+}
+
+#first_page .center_box
+{
+	position: absolute;
+	background: rgba(0,0,0,0.7);
+	width: 600px;
+	height: 270px;
+	border-radius: 15px;
+	left: 440px;
+	top: 220px;
+}
+
+#first_page .second
+{
+	margin-left: -420px;
+	margin-top: -10px;
+	position: absolute;
+	left: 55%;
+	top: 55%;
+	padding-right: 30px;
+	border-right-style: solid;
+	border-right-color: white; 
+	color: white;
+	font-size: 18px;
+}
+#first_page .third
+{
+	float: left;
+	margin-left: -120px;
+	margin-top: -10px;
+	position: absolute;
+	left: 55%;
+	top: 55%; 
+	color: white;
+	font-size: 18px;
+}
+#first_page .fourth
+{
+	margin-left: -200px;
+	margin-top: -30px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+body::-webkit-scrollbar
+{
+	width: 0.5rem;
+}
+body::-webkit-scrollbar-track
+{
+	background: #6649b8;  
+}
+#first_page .main
+{
+	max-width: 1200px;
+	margin-left: 10px;
+	margin-top: -303px;
+	position: fixed;
+	left: 59%;
+	top: 47%; 
+}
+#first_page .main ul
+{
+	float: right;
+	list-style: none;
+	margin-top:25px;
+}		
+#first_page .main ul li
+{
+	display: inline-block;
+}
+#first_page .main ul li a
+{
+	text-decoration: none;
+	color: white;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+}
+#first_page .main ul li a:hover
+{
+	background-color: white;
+	color: black;
+}
+#first_page .main ul li a.active
+{
+	background-color: white;
+	color: black;
+}
+
+#first_page .main ul li.logo
+{
+	align-content: center;
+	margin-left: 13px;
+	margin-top: -250px;
+	left: 59%;
+	top: 49%;	
+}
+
+#first_page .main ul li.logo:hover
+{
+	background: transparent;
+}
+
+#first_page .bottom_logo
+{
+	position: absolute;
+	left: 36%;
+	top: 42%;
+	margin-left: -10px;
+	margin-top: -10px;
+}
+
+#first_page .wording
+{
+	position: absolute;
+	left: 43%;
+	top: 44%;
+	margin-left: -10px;
+	margin-top: -10px;
+	color: white;
+	font-size: 26px;
+}
+
+#first_page .down_arrow
+{
+	position: absolute;
+	background: transparent;
+	top: 600px;
+	left: 52%;
+	border: none;
+	background-color: transparent;
+}
+
+#first_page .down_arrow:hover
+{
+	cursor: pointer;
+}
+
+#second_page .graphic_heading
+{
+	margin-left: -18px;
+	position: absolute;
+	top: 110%;
+	left: 0px;
+}
+
+#second_page .box
+{
+	position: absolute;
+	top: 130%;
+	left: 33%;
+	height: 350px;
+	width: 500px;
+	padding: 40px;
+	background: rgba(0,0,0,.75);
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0,0,0,.5);
+	border-radius: 15px;
+	padding-top: 60px;
+}
+
+#second_page .box h2
+{
+	letter-spacing: 2px;
+	margin : 0;
+	padding: 0;
+	color: white;
+	text-align: center;
+}
+
+#second_page .box .location
+{
+	position: relative;
+}
+
+#second_page .box .location input
+{
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: white;
+	margin-bottom: 30px;
+	border : none;
+	border-bottom: 1px solid #fff; 
+	outline: none;
+	background: transparent;
+	letter-spacing: 1px;
+}
+
+#second_page .box .location label
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	pointer-events: none;
+	transition: .5s;
+	letter-spacing: 1px;
+}
+
+#second_page .box .location input:focus ~ label,
+#second_page .box .location input:valid ~ label
+{
+
+	top: -18px;
+	left: 0px;
+	color: #03a9f4;
+	font-size: 12px;
+}
+
+#second_page .box input[type="submit"]
+{
+	background: transparent;
+	border : none;
+	outline: none;
+	color: #fff;
+	background: #03a9f4;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+#third_page .full_box
+{
+	position: absolute;
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100vh;
+	left: 0;
+	top: 200vh;
+}
+
+#third_page .temperature
+{
+	margin-left: 0;
+	margin-top: 0;
+	position: absolute;
+	left: 4%;
+	top: 258%;
+	color: white;
+}
+
+#third_page #temp
+{
+	margin-top: 10px;
+	font-size: 250px;
+	float: left;
+} 
+
+#third_page .degree
+{
+	margin-top: 60px;
+	font-size: 50px;
+	font-weight: 1em;
+	float: left;
+}
+
+#third_page #weather
+{
+	margin-left: 0;
+	margin-top: 0;
+	position: absolute;
+	left: 84%;
+	top: 288%;
+	float: right;
+	font-size: 50px;
+	color: white;
+}
+
+#third_page .down_arrow
+{
+	position: absolute;
+	background: transparent;
+	top: 1900px;
+	left: 47%;
+	border: none;
+	background-color: transparent;
+}
+
+#third_page .down_arrow:hover
+{
+	cursor: pointer;
+}
+
+#fourth_page .full_box
+{
+	position: absolute;
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100vh;
+	left: 0;
+	top: 300vh;
+}
+
+#fourth_page #temp_min
+{
+	margin-left: 0;
+	margin-top: 0;
+	left: 10%;
+	top: 338%;
+	position: absolute;
+	font-size: 40px;
+	color: white;
+	float: left;
+}
+
+#fourth_page #temp_max
+{
+	margin-left: 0;
+	margin-top: 0;
+	position: absolute;
+	color: white;
+	float: left;
+	left: 70%;
+	top: 338%;
+	font-size: 40px;
+}
+
+#fourth_page #pressure
+{
+	margin-left: 0;
+	margin-top: 0;
+	position: absolute;
+	color: white;
+	float: left;
+	left: 10%;
+	top: 358%;
+	font-size: 40px;
+}
+
+#fourth_page #humidity
+{
+	margin-left: 0;
+	margin-top: 0;
+	position: absolute;
+	color: white;
+	float: left;
+	left: 70%;
+	top: 358%;
+	font-size: 40px;
+}
+
+#fourth_page #visiblity
+{
+	margin-left: 0;
+	margin-top: 0;
+	position: absolute;
+	color: white;
+	float: left;
+	left: 10%;
+	top: 378%;
+	font-size: 40px;
+}
+
+#fourth_page #icon
+{
+	margin-left: 0;
+	margin-top: 0;
+	position: absolute;
+	left: 60%;
+	top: 320%;
+	height: 60px;
+	width: 60px;
+}
+
+#fourth_page #wind_speed
+{
+	margin-left: 0;
+	margin-top: 0;
+	position: absolute;
+	float: left;
+	color: white;
+	left: 70%;
+	top: 378%;
+	font-size: 40px;
+}
+
+#fourth_page #description
+{
+	margin-left: 0;
+	margin-top: 0;
+	position: absolute;
+	left: 30%;
+	top: 320%;
+	color: powderblue;
+	font-size: 50px;
+}
+
+#fourth_page .forecast_button
+{
+	padding: 5px 20px;
+	border-radius: 10px;
+	font-size: 20px;
+	font-style: helvetica;
+	position: absolute;
+	left: 42%;
+	top: 2580px;
+	color: white;
+	background: transparent;
+	border-style: solid;
+	border-color: white;	
+}
+
+#fourth_page .forecast_button:hover
+{
+	background-color: white;
+	color: darkviolet; 	
+	cursor: pointer;
+}
+
+.fifth_page #temp_1,#temp_2,#temp_3,#temp_4,#temp_5
+{
+	margin-left: 0;
+	margin-top: 0;
+	color: violet;
+	position: absolute;
+}
+
+.fifth_page #weather_1,#weather_2,#weather_3,#weather_4,#weather_5
+{
+	margin-left: 0;
+	margin-top: 0;
+	color: violet;
+	position: absolute;
+}
+
+.fifth_page #temp_min_1,#temp_min_2,#temp_min_3,#temp_min_4,#temp_min_5
+{
+	margin-left: 0;
+	margin-top: 0;
+	color: violet;
+	position: absolute;
+}
+
+.fifth_page #temp_max_1,#temp_max_2,#temp_max_3,#temp_max_4,#temp_max_5
+{
+	margin-left: 0;
+	margin-top: 0;
+	position: absolute;
+	color: violet;
+}
+
+.fifth_page #pressure_1,#pressure_2,#pressure_3,#pressure_4,#pressure_5
+{
+	margin-left: 0;
+	margin-top: 0;
+	position: absolute;
+	color: violet;
+}
+
+.fifth_page #humidity_1,#humidity_2,#humidity_3,#humidity_4,#humidity_5
+{
+	margin-left: 0;
+	margin-top: 0;
+	position: absolute;
+	color: violet;
+}
+
+.fifth_page #visiblity_1,#visiblity_2,#visiblity_3,#visiblity_4,#visiblity_5
+{
+	margin-left: 0;
+	margin-top: 0;
+	position: absolute;
+	color: violet;
+}
+
+.fifth_page #wind_speed_1,#wind_speed_2,#wind_speed_3,#wind_speed_4,#wind_speed_5
+{
+	margin-left: 0;
+	margin-top: 0;
+	position: absolute;
+	color: violet;
+}
+
+.fifth_page #description_1 , #description_2 , #description_3 , #description_4 , #description_5
+{
+	margin-left: 0;
+	margin-top: 0;
+	position: absolute;
+	color: powderblue;
+}
+
+#fifth_page .day1
+{
+	height: 450px;
+	width: 200px;
+	border-radius: 15px;
+	background: rgba(0,0,0,0.5);
+	padding-left: 10px;
+	padding: 7px;
+	float: left;
+	position: relative;
+	top: 40px;
+	left: 45px;
+	padding-top: 30px;
+}
+
+#fifth_page .day2
+{
+	height: 450px;
+	width: 200px;
+	border-radius: 15px;
+	background: rgba(0,0,0,0.5);
+	padding: 7px;
+	float: left;
+	position: relative;
+	left: 90px;
+	top: 40px;
+	padding-top: 30px;
+}
+
+#fifth_page .day3
+{
+	height: 450px;
+	width: 200px;
+	border-radius: 15px;
+	background: rgba(0,0,0,0.5);
+	padding: 7px;
+	float: left;
+	position: relative;
+	left: 135px;
+	top: 40px;
+	padding-top: 30px;
+}
+
+#fifth_page .day4
+{
+	height: 450px;
+	width: 200px;
+	border-radius: 15px;
+	background: rgba(0,0,0,0.5);
+	padding: 7px;
+	float: left;
+	position: relative;
+	left: 180px;
+	top: 40px;
+	padding-top: 30px;
+}
+
+#fifth_page .day5
+{
+	height: 450px;
+	width: 200px;
+	border-radius: 15px;
+	background: rgba(0,0,0,0.5);
+	padding: 7px;
+	float: left;
+	position: relative;
+	left: 225px;
+	top: 40px;
+	padding-top: 30px;
+}
+
+#fifth_page .heading_
+{
+	color: rgba(270,270,270,0.95);
+	font-size: 40px;
+	padding-top: 20px;
+	padding-left: 100px;
+	height: 60px;
+	width: 700px;
+}
+
+.back_arrow:hover
+{
+	cursor: pointer;
+}
+
+#second_page .back_arrow
+{
+	position: absolute;
+	background: transparent;
+	top: 700px;
+	left: 30px;
+	border: none;
+	background-color: transparent;
+}
+
+#third_page .back_arrow
+{
+	position: absolute;
+	background: transparent;
+	top: 1350px;
+	left: 30px;
+	border: none;
+	background-color: transparent;
+}
+
+#fourth_page .back_arrow
+{
+	position: absolute;
+	background: transparent;
+	top: 2020px;
+	left: 30px;
+	border: none;
+	background-color: transparent;
+}
+
+#fifth_page .back_arrow
+{
+	position: absolute;
+	background: transparent;
+	top: 2680px;
+	left: 30px;
+	border: none;
+	background-color: transparent;
+}
+
+#sixth_page .last_wording
+{
+	position: absolute;
+	color: white;
+	font-size: 15px;
+	left: 30%;
+	top: 510%;
+	letter-spacing: 1px;
+}
