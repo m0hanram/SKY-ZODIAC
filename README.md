@@ -1,5 +1,5 @@
 # SKY ZODIAC
- - final package for webdesigning course 
+ - A visually pleasing weather forecast app made for webdesigning course 
  
  
  Check it out here : 
