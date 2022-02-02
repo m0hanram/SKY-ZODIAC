@@ -1,9 +1,5 @@
 # SKY ZODIAC
  - A visually pleasing weather forecast app made for webdesigning course 
- 
- 
- Check it out here : 
- - https://skyzodiac.netlify.app/
 
 <p>
 <h3>Info :</h3>
